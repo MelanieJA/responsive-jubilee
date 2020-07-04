@@ -168,7 +168,16 @@ h2{
   font-family: 'lora', sans-serif;
   color: #2b2b2b;
   font-size: .85em;
+}
 
+h4{
+  font-family: 'lora', sans-serif;
+  font-size: .85em;
+}
+
+h5{
+  font-family: 'source sans pro', sans-serif;
+  font-size: 1em;
 }
 
 
@@ -213,10 +222,13 @@ header nav ul li{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
   background: url("../img/hero.png") center no-repeat #ccc;
   background-size: cover;
   min-height: 300px;
+}
+
+.hero-area h1{
+  margin-top: 0;
 }
 
 
@@ -235,6 +247,7 @@ header nav ul li{
 
 .about .about-content p{
   padding-bottom: 20px;
+  width: 90%;
 }
 
 
@@ -250,7 +263,7 @@ header nav ul li{
 }
 
 .work h2{
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   width: 100%;
   text-align: center;
 }
@@ -280,6 +293,7 @@ footer{
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  background: #ebebeb;
 }
 
 footer .content-wrapper{
@@ -291,24 +305,29 @@ footer .content-wrapper{
 }
 
 footer article figure{
-  width: 100%;
+  width: 95%;
+  border: white solid 3px;
   
   }
 footer article figure img{
-  width:100%;
+  width:95%;
 }
 
 footer .social .social-icons{
   display: flex;
 }
 
-footer
+footer .social-icons a{
+  font-size: 1.5em;
+  color: #c49075;
+}
 
 footer h4,
 footer h5,
 footer p{
   padding:5px 0;
 }
+
 
 /* ==========================================================================
    Helper classes
