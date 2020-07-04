@@ -119,7 +119,7 @@ body{
 
 h3{
   font-family: 'lora', serif;
-  color: #bbc085;
+  color: #c49075;
   font-size: 1.25em;
 }
 
@@ -185,10 +185,8 @@ h5{
 
 header{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow:row wrap;
-  background: #ececec;
+  justify-content: center;
+  background: #f9ceb7;
 }
 
 
@@ -224,11 +222,12 @@ header nav ul li{
   justify-content: center;
   background: url("../img/hero.png") center no-repeat #ccc;
   background-size: cover;
-  min-height: 300px;
+  min-height: 400px;
 }
 
 .hero-area h1{
   margin-top: 0;
+  width: 65%;
 }
 
 
@@ -417,9 +416,105 @@ footer p{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
+
+/** Global styles **/
+  *{outline: yellow solid 1px;}
+
+html{
+  font-size: 20px; /*changed so that font size scales up */
 }
+
+
+.content-wrapper{
+  max-width: 640px;
+}
+
+/**hero area**/
+
+.hero-area{
+  min-height: 450px;
+}
+
+.hero-area h1{
+   width: 80%;
+}
+
+/*about area */
+
+.about .content-wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.about .content-wrapper h2{
+  width: 100%;
+}
+
+.about .content-wrapper .about-content{
+  display:flex;
+
+}
+
+.about .content-wrapper .about-content p{
+  width: 45%;
+}
+
+/* Work area */
+
+.work .content-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.work .work-items{
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.work .work-items article{
+  width: 30%;
+  margin: 0;
+}
+
+.work .work-items article .work-title{
+  padding-bottom: 20px;
+}
+
+/*footer */
+
+footer .content-wrapper article{
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+footer .content-wrapper article figure{
+  width: 50%;
+}
+
+footer .social{
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
