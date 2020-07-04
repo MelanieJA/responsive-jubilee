@@ -501,14 +501,25 @@ footer .social{
   padding-top: 20px;
 }
 
-
-
-
-
-
-
 }
 
+
+@media only screen and (min-width: 1200px) {
+
+  html{
+    font-size: 23px; /*changed so that font size scales up */
+  }
+  
+  
+  .content-wrapper{
+    max-width: 960px;
+  }
+  
+.hero-area{
+  min-height: 700px;
+}
+
+}
 
 
 
