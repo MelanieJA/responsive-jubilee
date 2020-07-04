@@ -419,8 +419,8 @@ footer p{
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
 
-/** Global styles **/
-  *{outline: yellow solid 1px;}
+/** Global styles 
+  *{outline: yellow solid 1px;}**/
 
 html{
   font-size: 20px; /*changed so that font size scales up */
